@@ -1,6 +1,19 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext('2d');
 
+
+
+console.log("congratulations, you found the clue.")
+console.log("To reach the first exit, go immediately right, then go down, right, up, right, down, left, down, right. ")
+console.log("To reach the second exit, go up, and take the first left. Follow the path and take your first left yet again")
+console.log("To reach the third exit, go up follow the path and go right, continue right while moving up and down to dodge the walls.")
+console.log("The fourth exit is more secretive. In the console, type the following: revealexit()")
+var reveal = 0;
+function revealexit(){
+reveal = 1;
+};
+
+
 dangerdistance = 2
 player = {
     x: 30,
@@ -137,10 +150,24 @@ var maininterval = setInterval(function () {
     if (player.y > canvas.height - 10) {
         player.y = canvas.height - 10
     }
+
+
+
+
+    
     testExitTouched();
     gameLoop();
     wallcheck();
     newframe();
+    
+//reveal
+if(reveal == 1){
+    ctx.beginPath();
+    ctx.arc(exit4.x, exit4.y, 10, 0, 360)
+    ctx.fillStyle = "#00FF00"
+    ctx.fill();
+}
+//endreveal
     move();
 }, 5)
 
@@ -195,6 +222,8 @@ function newframe() {
 
 
 
+
+
     //renderwalls
     for (var b = 0; b < walls.length; b++) {
         ctx.beginPath();
@@ -239,4 +268,3 @@ function newframe() {
 
 
 };
-newframe();
