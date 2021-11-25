@@ -178,7 +178,7 @@ function testExitTouched() {
     }
     var distancetoExit2 = Math.sqrt(Math.pow((exit2.x - player.x), 2) + Math.pow((exit2.y - player.y), 2))
     if (distancetoExit2 <= 20) {
-        window.location.href = "URL OF MINIGAME2";
+        window.location.href = "https://lainey-moffett.github.io/WinterFestival.github.io/";
     }
     var distancetoExit3 = Math.sqrt(Math.pow((exit3.x - player.x), 2) + Math.pow((exit3.y - player.y), 2))
     if (distancetoExit3 <= 20) {
