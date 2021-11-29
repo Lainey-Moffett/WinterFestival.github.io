@@ -186,7 +186,7 @@ function testExitTouched() {
     }
     var distancetoExit4 = Math.sqrt(Math.pow((exit4.x - player.x), 2) + Math.pow((exit4.y - player.y), 2))
     if (distancetoExit4 <= 20) {
-        window.location.href = "URL OF MINIGAME4";
+        window.location.href = "https://lainey-moffett.github.io/WinterFestival.github.io/thecomputerhatesmirrors";
     }
 }
 
