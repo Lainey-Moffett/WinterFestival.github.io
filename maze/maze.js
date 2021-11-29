@@ -182,7 +182,7 @@ function testExitTouched() {
     }
     var distancetoExit3 = Math.sqrt(Math.pow((exit3.x - player.x), 2) + Math.pow((exit3.y - player.y), 2))
     if (distancetoExit3 <= 20) {
-        window.location.href = "URL OF MINIGAME3";
+        window.location.href = "https://scratch.mit.edu/projects/602645995";
     }
     var distancetoExit4 = Math.sqrt(Math.pow((exit4.x - player.x), 2) + Math.pow((exit4.y - player.y), 2))
     if (distancetoExit4 <= 20) {
