@@ -70,3 +70,13 @@ nav ul li a{
    
     
 }
+
+.contentTwo {
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 10px;
+
+}
